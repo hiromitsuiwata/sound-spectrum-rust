@@ -22,5 +22,6 @@ export PULSE_SERVER=unix:$(sed 's/unix://g' <<< "$PULSE_SERVER")
 cargo run --bin beep
 cargo run --bin feedback
 cargo run --bin record_wav
+cargo run --bin record_wav_windows
 cargo run --bin synth_tones
 ```

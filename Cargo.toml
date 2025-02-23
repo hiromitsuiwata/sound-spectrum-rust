@@ -29,6 +29,10 @@ name = "record_wav"
 path = "src/cpal/record_wav.rs"
 
 [[bin]]
+name = "record_wav_windows"
+path = "src/cpal/record_wav_windows.rs"
+
+[[bin]]
 name = "synth_tones"
 path = "src/cpal/synth_tones.rs"
 

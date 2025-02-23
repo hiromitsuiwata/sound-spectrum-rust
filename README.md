@@ -9,6 +9,8 @@
 - https://github.com/RustAudio/dasp
 - https://github.com/Joylei/plotters-iced/
 - https://github.com/iced-rs/iced
+- https://qiita.com/GreasySlug/items/1678c4b1e4b6e0721bf3
+
 
 ## Linux環境構築
 

@@ -1,15 +1,16 @@
 # sound-spectrum-rust
 
-## 参考
+## サンプルコードのコピー元
 
 - https://qiita.com/kamiro/items/5493dd109b7cc5043814
 - https://github.com/RustAudio/cpal
 - https://zenn.dev/yutannihilation/articles/bb89785ceaad77
 - https://github.com/RustAudio/cpal/tree/master/examples
 - https://github.com/RustAudio/dasp
+- https://github.com/Joylei/plotters-iced/
+- https://github.com/iced-rs/iced
 
-
-## 環境構築
+## Linux環境構築
 
 ```bash
 sudo apt -y install alsa pulseaudio libasound2-dev pkg-config

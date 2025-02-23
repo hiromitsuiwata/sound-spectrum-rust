@@ -10,6 +10,21 @@ ringbuf = "0.4.1"
 clap = {version = "4.0", features = ["derive"]}
 cpal = "0.15.3"
 dasp = {version = "0.11.0", features = ["all"]}
+plotters-iced = "0.11"
+iced = { version = "0.13", features = ["canvas", "tokio", "debug"] }
+plotters={ version = "0.3", default-features = false, features = [
+    "chrono",
+    "area_series",
+    "line_series",
+    "point_series",
+] }
+sysinfo = { version = "0.30", default-features = false }
+chrono = { version = "0.4", default-features = false }
+plotters-backend = "0.3"
+rand = "0.8"
+tokio = { version = "1", features = ["rt"], default-features = false }
+tracing-subscriber = "0.3"
+
 
 [target.'cfg(any(target_os = "linux", target_os = "dragonfly", target_os = "freebsd", target_os = "netbsd"))'.dependencies]
 alsa = "0.9"
@@ -43,3 +58,19 @@ path = "src/dasp/synth.rs"
 [[bin]]
 name = "ch2-sine-wave"
 path = "src/dasp/ch2-sine-wave.rs"
+
+[[bin]]
+name = "cpu-monitor"
+path = "src/plotters-iced/cpu-monitor.rs"
+
+[[bin]]
+name = "large-data"
+path = "src/plotters-iced/large-data.rs"
+
+[[bin]]
+name = "mouse_events"
+path = "src/plotters-iced/mouse_events.rs"
+
+[[bin]]
+name = "clock"
+path = "src/iced/clock.rs"
